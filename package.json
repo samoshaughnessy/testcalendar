@@ -1,0 +1,31 @@
+{
+  "name": "testNav",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android-linux": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/react-native-calendars": "^1.20.2",
+    "react": "16.4.1",
+    "react-native": "^0.54.4",
+    "react-native-calendars": "^1.20.0",
+    "react-native-navigation": "wix/react-native-navigation#2580/head"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.13",
+    "@types/react-native": "^0.56.15",
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "^5",
+    "jest": "23.5.0",
+    "react-native-typescript-transformer": "^1.2.10",
+    "react-test-renderer": "16.4.1",
+    "typescript": "^3.0.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
